@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,7 @@ namespace RentalKendaraan_071.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.Peminjaman.ToListAsync());
+
         }
 
         // GET: Peminjamen/Details/5
@@ -148,5 +150,8 @@ namespace RentalKendaraan_071.Controllers
         {
             return _context.Peminjaman.Any(e => e.IdPeminjaman == id);
         }
+
+        
     }
 }
+   
