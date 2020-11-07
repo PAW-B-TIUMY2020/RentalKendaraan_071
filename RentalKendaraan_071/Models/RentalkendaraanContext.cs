@@ -156,13 +156,13 @@ namespace RentalKendaraan_071.Models
                     .HasColumnName("ID_Peminjaman")
                     .ValueGeneratedNever();
 
-                entity.Property(e => e.IdCustomer).HasColumnName("ID_Customer");
+                entity.Property(e => e.IdCostumer).HasColumnName("ID_Customer");
 
                 entity.Property(e => e.IdJaminan).HasColumnName("ID_Jaminan");
 
                 entity.Property(e => e.IdKendaraan).HasColumnName("ID_Kendaraan");
 
-                entity.Property(e => e.TgiPeminjaman)
+                entity.Property(e => e.TglPeminjaman)
                     .HasColumnName("Tgi_Peminjaman")
                     .HasColumnType("datetime");
             });
