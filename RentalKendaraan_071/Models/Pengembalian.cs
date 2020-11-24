@@ -17,6 +17,6 @@ namespace RentalKendaraan_071.Models
         public int? Denda { get; set; }
 
         public Peminjaman IdPeminjamanNavigation { get; set; }
-        public Pengembalian IdPengembalianNavigation { get; set; }
+       // public Pengembalian IdPengembalianNavigation { get; set; }
     }
 }

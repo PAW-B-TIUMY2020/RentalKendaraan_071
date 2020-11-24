@@ -26,6 +26,8 @@ namespace RentalKendaraan_071.Models
         [MaxLength(12, ErrorMessage = "No Hp tidak boleh lebih dari 12 angka")]
         public string NoHp { get; set; }
         public int? IdGender { get; set; }
+
+        public Gender IdGenderNavigation { get; set; }
         public ICollection<Peminjaman> Peminjaman { get; set; }
     }
 }

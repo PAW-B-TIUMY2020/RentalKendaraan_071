@@ -30,11 +30,11 @@ namespace RentalKendaraan_071.Models
         [Required(ErrorMessage = "ID Jaminan tidak boleh kosong")]
         public int? IdJaminan { get; set; }
 
-        [RegularExpression("^[0-9]^$", ErrorMessage = "Hanya Boleh Diisi oleh Angka!")]
+        [Required(ErrorMessage = "Biaya wajib di isi")]
         public int? Biaya { get; set; }
 
         [DisplayName("Customer")]
-        public Customer IdCostumerNavigation { get; set; }
+        public Customer IdCustomerNavigation { get; set; }
 
         [DisplayName("Jaminan")]
         public Jaminan IdJaminanNavigation { get; set; }
