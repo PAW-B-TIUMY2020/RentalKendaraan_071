@@ -13,9 +13,10 @@ namespace RentalKendaraan_071.Models
         public int? IdPeminjaman { get; set; }
         public int? IdKondisi { get; set; }
 
-        [RegularExpression("^[0-9]^$", ErrorMessage = "Hanya Boleh Diisi oleh Angka!")]
+        [Required(ErrorMessage = "ID Kendaraan tidak boleh kosong")]
         public int? Denda { get; set; }
 
+        public KondisiKendaraan IdKondisiNavigation { get; set; }
         public Peminjaman IdPeminjamanNavigation { get; set; }
        // public Pengembalian IdPengembalianNavigation { get; set; }
     }
